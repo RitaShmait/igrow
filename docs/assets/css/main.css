@@ -1375,7 +1375,242 @@ section,
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team .team-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
 
+.team .team-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 20px 10px 20px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 5px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  font-family: var(--heading-font);
+}
+
+.team .team-filters li:hover,
+.team .team-filters li.filter-active {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+}
+
+.team .team-filters li:first-child {
+  margin-left: 0;
+}
+
+.team .team-filters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .team .team-filters li {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+}
+
+.team .team-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+    /* Custom aspect ratio */
+    height: 465px;
+    /* 350px width : 465px height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #3498db; */
+  border-radius: 8px;
+  margin: 0 auto 20px auto;
+  /* Center the item within its column with bottom margin */
+}
+
+/* Ensure 4 items per row on larger screens */
+@media (min-width: 1200px) {
+  .team .isotope-container .col-lg-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .team .team-item {
+    max-width: 290px;
+      height: 385px;
+      /* Proportional scaling */
+  }
+}
+
+@media (max-width: 991px) {
+  .team .team-item {
+    max-width: 280px;
+    height: 372px;
+      /* Proportional scaling */
+  }
+}
+
+@media (max-width: 576px) {
+  .team .team-item {
+    max-width: 175px;
+      height: 233px;
+      /* Proportional scaling */
+  }
+
+  .team .isotope-container .col-lg-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.team .team-item img {
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+  object-position: center;
+}
+
+.team .team-item .team-info {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+    right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.5s;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 0 0 8px 8px;
+}
+
+.team .team-item .team-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.team .team-item .team-info p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-right: 0;
+  }
+  
+  @media (max-width: 576px) {
+    .team .team-item .team-info h4 {
+      font-size: 11px;
+    }
+  
+    .team .team-item .team-info p {
+      font-size: 10px;
+    }
+}
+
+.team .team-item .team-info .preview-link,
+.team .team-item .team-info .details-link {
+  position: absolute;
+  right: 50px;
+  font-size: 24px;
+  top: calc(50% - 14px);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  transition: 0.3s;
+  line-height: 0;
+}
+
+.team .team-item .team-info .preview-link:hover,
+.team .team-item .team-info .details-link:hover {
+  color: var(--accent-color);
+}
+
+.team .team-item .team-info .details-link {
+  right: 14px;
+  font-size: 28px;
+}
+
+/* Center single team items when there's only one in a row */
+.team .isotope-container {
+  position: relative;
+  /* needed for absolutely-positioned items */
+  margin: 0 auto;
+  /* centers the grid when fitWidth is enabled */
+}
+
+/*--------------------------------------------------------------
+# Team Details Section
+--------------------------------------------------------------*/
+.team-details .team-details-slider img {
+  width: 100%;
+}
+
+.team-details .team-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.team-details .team-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  opacity: 1;
+}
+
+.team-details .team-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.team-details .team-info {
+  background-color: var(--surface-color);
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-details .team-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.team-details .team-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.team-details .team-info ul li+li {
+  margin-top: 10px;
+}
+
+.team-details .team-description {
+  padding-top: 30px;
+}
+
+.team-details .team-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.team-details .team-description p {
+  padding: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/

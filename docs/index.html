@@ -1,3 +1,4 @@
+<!-- https://igrowwithrita.com/  -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +6,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>IGrow with Rita - Professional Business Growth</title>
-  <meta name="description" content="Start your professional business growth right now with IGrow with Rita. Digital marketing, content creation, branding, and more.">
-  <meta name="keywords" content="business growth, digital marketing, content creation, branding, web development, printing, ads management">
+  <meta name="description"
+    content="Start your professional business growth right now with IGrow with Rita. Digital marketing, content creation, branding, and more.">
+  <meta name="keywords"
+    content="business growth, digital marketing, content creation, branding, web development, printing, ads management">
 
   <script>
     // Website Content Data
@@ -17,22 +20,23 @@
         subtitle: "with Rita",
         tagline: "Start your professional business growth right now with us"
       },
-      
+
       // Navigation Menu
       navigation: [
         { name: "Home", href: "#home", active: true },
         { name: "Services", href: "#services", active: false },
         { name: "Portfolio", href: "#portfolio", active: false },
+        { name: "Team", href: "#team", active: false },
         { name: "Contact", href: "#contact", active: false }
       ],
-      
+
       // Social Media Links
       socialLinks: [
         { platform: "whatsapp", icon: "bi-whatsapp", href: "https://wa.link/j2ok5g" },
         { platform: "instagram", icon: "bi-instagram", href: "https://www.instagram.com/igrowwithrita/" },
         { platform: "tiktok", icon: "bi-tiktok", href: "#" },
       ],
-      
+
       // Home Section
       home: {
         title: "IGrow with Rita",
@@ -41,7 +45,7 @@
         ctaLink: "#services",
         backgroundImage: "assets/img/bg.png"
       },
-      
+
       // Services Section
       services: {
         title: "Services",
@@ -91,7 +95,7 @@
           }
         ]
       },
-      
+
       // Portfolio Section
       portfolio: {
         title: "Portfolio",
@@ -211,7 +215,18 @@
           },
         ]
       },
-      
+      // Team Section
+      team: {
+        title: "Team",
+        description: "",
+        items: [
+          {
+            title: "Rita Shmait",
+            description: "Founder",
+            image: "assets/img/team/rita.png",
+          },
+        ]
+      },
       // Contact Section
       contact: {
         title: "Contact",
@@ -319,17 +334,17 @@
       </div>
 
     </section><!-- /Home Section -->
-    
+
     <!-- Services Section -->
     <section id="services" class="services section">
-    
+
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
         <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
       </div>
       <!-- End Section Title -->
-    
+
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
@@ -350,7 +365,7 @@
                 objectives.</p>
             </div>
           </div><!-- End Service Item -->
-    
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item item-cyan position-relative">
               <div class="icon">
@@ -369,7 +384,7 @@
                 objectives.</p>
             </div>
           </div><!-- End Service Item -->
-    
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item item-orange position-relative">
               <div class="icon">
@@ -383,13 +398,14 @@
               <a href="#" class="stretched-link">
                 <h3>Branding</h3>
               </a>
-              <p>Establish a cohesive brand identity that embodies your core values, differentiates you in the marketplace,
+              <p>Establish a cohesive brand identity that embodies your core values, differentiates you in the
+                marketplace,
                 and aligns
                 with your strategic objectives.
               </p>
             </div>
           </div><!-- End Service Item -->
-    
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item item-red position-relative">
               <div class="icon">
@@ -410,7 +426,7 @@
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
-    
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item item-indigo position-relative">
               <div class="icon">
@@ -431,7 +447,7 @@
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
-    
+
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item item-pink position-relative">
               <div class="icon">
@@ -450,11 +466,11 @@
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
-    
+
         </div>
-    
+
       </div>
-    
+
     </section><!-- /Services Section -->
 
     <!-- Portfolio Section -->
@@ -475,15 +491,31 @@
             <li data-filter=".filter-product">Card</li>
             <li data-filter=".filter-branding">Web</li>
           </ul> -->
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4 isotope-container-portfolio" data-aos="fade-up" data-aos-delay="200">
             <!-- Portfolio items will be populated by JavaScript -->
-            </div><!-- End Portfolio Container -->
+          </div><!-- End Portfolio Container -->
 
         </div>
 
       </div>
 
     </section><!-- /Portfolio Section -->
+    <!-- Team Section -->
+    <section id="team" class="team section">
+    
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+    
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="row gy-4 isotope-container-team" data-aos="fade-up" data-aos-delay="200">
+          </div><!-- End Team Container -->
+        </div>
+      </div>
+    </section><!-- /Team Section -->
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
@@ -595,7 +627,7 @@
       // Populate site title and subtitle
       document.getElementById('site-title').textContent = websiteData.site.title;
       document.getElementById('site-subtitle').textContent = websiteData.site.subtitle;
-      
+
       // Populate navigation menu
       const navMenu = document.getElementById('navigation-menu');
       navMenu.innerHTML = '';
@@ -610,7 +642,7 @@
         li.appendChild(a);
         navMenu.appendChild(li);
       });
-      
+
       // Populate social links
       const socialLinks = document.getElementById('social-links');
       socialLinks.innerHTML = '';
@@ -623,14 +655,14 @@
         a.appendChild(i);
         socialLinks.appendChild(a);
       });
-      
+
       // Populate home section
       document.getElementById('home-bg').src = websiteData.home.backgroundImage;
       document.getElementById('home-title').textContent = websiteData.home.title;
       document.getElementById('home-description').innerHTML = websiteData.home.description;
       document.getElementById('home-cta').textContent = websiteData.home.ctaText;
       document.getElementById('home-cta').href = websiteData.home.ctaLink;
-      
+
       // Populate services section
       const servicesContainer = document.querySelector('#services .row.gy-4');
       servicesContainer.innerHTML = '';
@@ -655,13 +687,13 @@
         `;
         servicesContainer.innerHTML += serviceHTML;
       });
-      
+
       // Populate portfolio section
       const portfolioTitle = document.querySelector('#portfolio .section-title h2');
       const portfolioDescription = document.querySelector('#portfolio .section-title p');
       portfolioTitle.textContent = websiteData.portfolio.title;
       portfolioDescription.textContent = websiteData.portfolio.description;
-      
+
       // Populate portfolio filters
                 // const portfolioFilters = document.querySelector('.portfolio-filters');
                 // portfolioFilters.innerHTML = '';
@@ -674,9 +706,9 @@
                 //   }
                 //   portfolioFilters.appendChild(li);
                 // });
-      
+
       // Populate portfolio items
-      const portfolioContainer = document.querySelector('.isotope-container');
+                const portfolioContainer = document.querySelector('.isotope-container-portfolio');
       portfolioContainer.innerHTML = '';
       websiteData.portfolio.items.forEach(item => {
         const portfolioItem = document.createElement('div');
@@ -694,13 +726,41 @@
 
         portfolioContainer.appendChild(portfolioItem);
       });
-      
+
+
+                // Populate team section
+                const teamTitle = document.querySelector('#team .section-title h2');
+                const teamDescription = document.querySelector('#team .section-title p');
+                teamTitle.textContent = websiteData.team.title;
+                teamDescription.textContent = websiteData.team.description;
+
+
+                // Populate team items
+                const teamContainer = document.querySelector('.isotope-container-team');
+                teamContainer.innerHTML = '';
+                websiteData.team.items.forEach(item => {
+                  const teamItem = document.createElement('div');
+                  teamItem.className = `col-lg-4 col-md-6 team-item isotope-item ${item.category}`;
+
+                  teamItem.innerHTML = `
+          <div class="details-link">
+            <img src="${item.image}" class="img-fluid" alt="${item.title}">
+            <div class="team-info">
+              <h4>${item.title}</h4>
+              <p>${item.description}</p>
+            </div>
+          </div>
+          `;
+
+                  teamContainer.appendChild(teamItem);
+                });
+
       // Populate contact section
       const contactTitle = document.querySelector('#contact .section-title h2');
       const contactDescription = document.querySelector('#contact .section-title p');
       contactTitle.textContent = websiteData.contact.title;
       contactDescription.textContent = websiteData.contact.description;
-      
+
       // Populate contact info
       const contactInfoContainer = document.querySelector('#contact .col-lg-6');
       contactInfoContainer.innerHTML = '';
@@ -716,7 +776,7 @@
         `;
         contactInfoContainer.innerHTML += infoHTML;
       });
-      
+
       // Populate map
       const mapContainer = document.querySelector('.map-wrap iframe');
       mapContainer.src = websiteData.contact.map.src;
