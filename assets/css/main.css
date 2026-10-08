@@ -4,3 +4,42 @@
 .hero-actions{margin-top:28px}.hero-actions .button--lime{padding:17px 23px;font-size:12px}
 .hero-actions .button--lime{gap:18px;padding:7px 8px 7px 22px;border:1px solid var(--lime);letter-spacing:.08em;box-shadow:0 12px 26px rgba(216,255,79,.14)}.hero-actions .button--lime span{display:grid;place-items:center;width:38px;height:38px;margin-left:0;border-radius:50%;background:var(--ink);color:var(--lime);font-size:19px;transition:transform .3s ease}.hero-actions .button--lime:hover{background:var(--lime);transform:translateY(-4px);box-shadow:0 16px 32px rgba(216,255,79,.2)}.hero-actions .button--lime:hover span{transform:rotate(45deg)}
 .hero-actions .button--lime{position:relative;gap:16px;padding:0 0 10px;border:0;border-radius:0;background:transparent;color:var(--cream);font-size:14px;font-weight:700;letter-spacing:-.02em;text-transform:none;box-shadow:none}.hero-actions .button--lime:after{content:'';position:absolute;right:54px;bottom:0;left:0;height:1px;background:var(--lime);transform-origin:left;transition:transform .3s ease}.hero-actions .button--lime span{width:42px;height:42px;background:var(--lime);color:var(--ink);font-size:20px}.hero-actions .button--lime:hover{background:transparent;box-shadow:none;transform:translateY(-3px)}.hero-actions .button--lime:hover:after{transform:scaleX(.72)}.hero-actions .button--lime:hover span{transform:rotate(45deg)}
+.hero-actions {
+    margin-top: 32px
+}
+
+.hero-actions .button--lime {
+    gap: 18px;
+    padding: 8px 10px 8px 10px;
+    border: 1px solid var(--lime);
+    border-radius: 30px;
+    background: var(--lime);
+    color: var(--ink);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    box-shadow: 0 12px 26px rgba(216, 255, 79, .14)
+}
+
+.hero-actions .button--lime:after {
+    display: none
+}
+
+.hero-actions .button--lime span {
+    width: 38px;
+    height: 38px;
+    margin-left: 0;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--lime);
+    font-size: 19px
+}
+
+.hero-actions .button--lime:hover {
+    background: var(--lime);
+    box-shadow: 0 16px 32px rgba(216, 255, 79, .2);
+    transform: translateY(-4px)
+}
+.camera-scene{--camera-x:0px;--camera-y:0px;--camera-rotate:-10deg;position:absolute;z-index:4;left:55%;top:51%;width:265px;height:170px;transform:translate(-50%,-50%);pointer-events:none;transition:filter .3s ease}.camera{position:absolute;inset:23px 11px 16px;border-radius:18px 18px 23px 23px;background:linear-gradient(145deg,#d8ff4f 0%,#b8df36 54%,#8daf25 100%);border:2px solid rgba(16,17,27,.75);box-shadow:16px 22px 0 rgba(16,17,27,.17),0 24px 40px rgba(0,0,0,.28);transform:translate3d(var(--camera-x),var(--camera-y),0) rotate(var(--camera-rotate));transform-origin:center;transition:transform .1s linear}.camera:before{content:'';position:absolute;left:26px;top:-16px;width:86px;height:25px;border:2px solid rgba(16,17,27,.75);border-bottom:0;border-radius:12px 12px 0 0;background:#b8df36}.camera:after{content:'';position:absolute;right:-9px;top:31px;width:9px;height:57px;border:2px solid rgba(16,17,27,.75);border-left:0;border-radius:0 8px 8px 0;background:#9cc22b}.camera-viewfinder{position:absolute;left:32px;top:13px;width:28px;height:14px;border:2px solid var(--ink);border-radius:4px;background:var(--lavender);transform:rotate(-5deg)}.camera-flash{position:absolute;right:23px;top:15px;width:22px;height:17px;border-radius:4px;background:var(--cream);border:2px solid var(--ink)}.camera-lens{position:absolute;left:50%;top:54%;width:92px;height:92px;border-radius:50%;display:grid;place-items:center;background:#10111b;border:7px solid #e4e8ca;box-shadow:0 0 0 3px var(--ink),inset 0 0 0 7px #4d5368;transform:translate(-50%,-50%)}.camera-lens:before{content:'';width:52px;height:52px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#d7cfff 0 7%,#9180fa 8% 18%,#26294b 20% 62%,#10111b 64%);box-shadow:0 0 16px rgba(183,169,255,.8);animation:lensPulse 3.4s ease-in-out infinite}.camera-lens i{position:absolute;width:10px;height:10px;right:17px;top:14px;background:var(--lime);border-radius:50%;box-shadow:0 0 14px var(--lime)}.camera-mark{position:absolute;right:18px;bottom:15px;font:500 8px var(--mono);color:var(--ink);letter-spacing:.08em}.camera-grip{position:absolute;left:-15px;top:40px;width:15px;height:76px;border-radius:10px 0 0 10px;border:2px solid var(--ink);border-right:0;background:#9cc22b}@keyframes lensPulse{0%,100%{transform:scale(.96)}50%{transform:scale(1.06)}}
+@media(max-width:800px){.camera-scene{left:57%;top:57%;width:205px;height:135px}.camera{inset:19px 8px 13px;border-radius:14px 14px 18px 18px;box-shadow:11px 15px 0 rgba(16,17,27,.17),0 18px 28px rgba(0,0,0,.28)}.camera:before{left:21px;top:-12px;width:67px;height:19px}.camera-viewfinder{left:24px;top:10px;width:23px;height:11px}.camera-flash{right:17px;top:11px;width:18px;height:13px}.camera-lens{width:70px;height:70px;border-width:5px;box-shadow:0 0 0 2px var(--ink),inset 0 0 0 5px #4d5368}.camera-lens:before{width:40px;height:40px}.camera-lens i{right:12px;top:10px;width:8px;height:8px}.camera-mark{right:13px;bottom:10px;font-size:6px}.camera-grip{left:-11px;top:31px;width:11px;height:59px}}

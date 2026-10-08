@@ -32,7 +32,17 @@
   }));
 
   const parallaxItems = document.querySelectorAll('[data-parallax]');
+  const camera = document.querySelector('[data-scroll-camera]');
   let ticking = false;
-  const moveOrbs = () => { parallaxItems.forEach(item => { item.style.transform = `translate3d(0, ${window.scrollY * Number(item.dataset.parallax)}px, 0)`; }); ticking = false; };
+  const moveOrbs = () => {
+    parallaxItems.forEach(item => { item.style.transform = `translate3d(0, ${window.scrollY * Number(item.dataset.parallax)}px, 0)`; });
+    if (camera && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const progress = Math.min(window.scrollY, 760);
+      camera.style.setProperty('--camera-y', `${progress * .11}px`);
+      camera.style.setProperty('--camera-x', `${progress * -.035}px`);
+      camera.style.setProperty('--camera-rotate', `${-10 + progress * .025}deg`);
+    }
+    ticking = false;
+  };
   window.addEventListener('scroll', () => { if (!ticking) { window.requestAnimationFrame(moveOrbs); ticking = true; } }, { passive: true });
 })();
